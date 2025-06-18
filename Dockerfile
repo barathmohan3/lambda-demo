@@ -1,5 +1,5 @@
-def handler(event, context):
-    return {
-        "statusCode": 200,
-        "body": "Hello from Docker Lambda via API Gateway!"
-    }
+FROM public.ecr.aws/lambda/python:3.9
+
+COPY app.py .
+
+CMD ["app.handler"]
