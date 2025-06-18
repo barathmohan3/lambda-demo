@@ -1,4 +1,4 @@
-name: Deploy Docker Lambda ECR
+name: Deploy Lambda ECR
 
 on:
   push:
